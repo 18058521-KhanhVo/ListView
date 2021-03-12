@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         lv= findViewById(R.id.lv);
 
         arrayList=new ArrayList<>();
-        arrayList.add(new Product("Code",R.drawable.code,80));
-        arrayList.add(new Product("Google",R.drawable.google,80));
-        arrayList.add(new Product("Google",R.drawable.images,80));
+        arrayList.add(new Product("Code",R.drawable.code,"$80"));
+        arrayList.add(new Product("Google",R.drawable.google,"$80"));
+        arrayList.add(new Product("Google",R.drawable.images,"$80"));
 
         adt = new CustomProductAdapter(this, R.layout.ittem_listview, arrayList);
         lv.setAdapter(adt);

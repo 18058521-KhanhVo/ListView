@@ -3,12 +3,12 @@ package com.example.listview;
 public class Product {
 private String name;
 private int imageProduct;
-private double productPrice;
+private String productPrice;
 
     public Product() {
     }
 
-    public Product(String name, int imageProduct, double productPrice) {
+    public Product(String name, int imageProduct, String productPrice) {
         this.name = name;
         this.imageProduct = imageProduct;
         this.productPrice = productPrice;
@@ -30,11 +30,11 @@ private double productPrice;
         this.imageProduct = imageProduct;
     }
 
-    public double getProductPrice() {
+    public String getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(double productPrice) {
+    public void setProductPrice(String productPrice) {
         this.productPrice = productPrice;
     }
 }
